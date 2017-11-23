@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAOA,kEAAmB;EACf,KAAK,EALA,KAAK;EAMV,gBAAgB,EARX,OAAwB;EAS7B,aAAa,EAAE,GAAG;EAClB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,IAAI;;AAErB,0FAAyB;EACrB,gBAAgB,EAfX,OAAuB;;AAuBhC,eAAe;EAEX,gBAAgB,EAAE,KAAK;;AAE3B,eAAe;EAEX,gBAAgB,EA3BX,OAAO",
+"sources": ["../scss/icon.scss"],
+"names": [],
+"file": "icon.css"
+}

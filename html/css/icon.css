@@ -1,0 +1,19 @@
+.fa-pencil-square-o, .fa-trash-o, .fa-plus-circle, fa-minus-circle {
+  color: beige;
+  background-color: #92d0cf;
+  border-radius: 5px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 50px; }
+
+.fa-pencil-square-o:hover, .fa-trash-o:hover, .fa-plus-circle:hover, fa-minus-circle:hover {
+  background-color: #2d6968; }
+
+.fa-plus-circle {
+  background-color: green; }
+
+fa-minus-circle {
+  background-color: crimson; }
+
+/*# sourceMappingURL=icon.css.map */

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans'); 
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+@import "menu";
+@import "login";
+@import "grille";
+//@import "icon";
+
+$hauteur: 50px;     // margin-top des container
+$color1: dimgray;
+$color2: beige;     // background du body
+$color3: #4CB0AE;   // background .sp
+$color4: #9B434F;   // background button
+
+$shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: $color2;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 1.5px;
+    color: $color1;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    margin-top: $hauteur;
+    padding: 10px;
+}
+
+
+.formulaire{
+    margin-top: 80px;
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: $shadow;
+}
+input{
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+}
+textarea{
+    display: block;
+    margin: auto;
+    width: 100%;
+    margin-top: 5px;
+    resize:none;        // L'utilisateur ne peut pas le redimensionner
+}
+p{
+    line-height: 15px;
+    font-size: 13px;
+    text-align: justify;
+    margin: 3px;
+}
+table {
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid gray;
+}
+th, td{
+    padding: 5px;
+    color: $color1;
+    font-size: 13px;
+}
+.sp{
+    background-color: lighten($color3,20%);
+    border-radius: 5px;
+    margin-top: 3px;
+    padding: 15px;
+    box-shadow: $shadow;
+}
+.button{
+    width: 70%;
+    padding: 5px;
+    text-decoration: none;
+    background-color: lighten($color4,20%);
+    color: beige;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    text-align: center;
+}
+.button:hover{
+    background-color: $color4;
+}
+.cadeau{
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+@media(min-width:480px){
+
+}

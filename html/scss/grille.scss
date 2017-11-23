@@ -1,0 +1,38 @@
+
+/*cambie el width y el query de 1024 a 768*/
+
+@media(min-width:768px){
+.container{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    div { 
+    box-sizing: border-box;
+    }
+}
+
+//[class^=col]{
+// 
+//}
+
+$elements: 12;
+$lgCol : 6;
+$lgGut : (100 - ($elements * $lgCol)) / ($elements + 1);
+@for $i from 1 through $elements{
+    .col-#{$i}{
+        width: $i * $lgCol + ($i - 1) * $lgGut * 1%;
+        margin-left: $lgGut * 1%;
+    }
+}
+
+@for $i from 1 through $elements{
+    .offset-#{$i}{
+        $a : $i * $lgCol + ($i - 1) * $lgGut * 1%;
+        $b : $lgGut * 1%;
+        margin-left: $a+($b*2);  
+    }
+}
+}
+
+

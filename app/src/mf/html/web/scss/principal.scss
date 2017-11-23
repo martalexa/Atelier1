@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans'); 
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+@import "menu";
+@import "grille";
+@import "icon";
+@import "alert";
+
+
+$hauteur: 50px;
+$color1: dimgray;
+$color2: beige;
+$color3: #4CB0AE;
+$color4: #9B434F; 
+
+
+$shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: $color2;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+    width: 100%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 1.5px;
+    color: $color1;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    margin-top: $hauteur;
+    padding: 10px;
+}
+
+.formulaire{
+    margin-top: 80px;
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: $shadow;
+}
+input{
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    width: 50%;
+}
+input[type="radio"] {
+    -ms-transform: scale(1); /* IE 9 */
+    -webkit-transform: scale(1); /* Chrome, Safari, Opera */
+    transform: scale(1);
+    display: block;
+    margin: auto;
+}
+textarea{
+    display: block;
+    margin: auto;
+    width: 50%;
+    min-height: 50px;
+    margin-top: 5px;
+    resize: none;
+}
+p{
+    line-height: 15px;
+    font-size: 0.9em;
+    text-align: justify;
+    margin: 3px;
+    padding: 10px;
+}
+table {
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid gray;
+}
+th, td{
+    padding: 5px;
+    color: $color1;
+    font-size: 1em;
+}
+a{
+    text-decoration: none;
+    color: $color1;
+}
+a:hover{
+    cursor: pointer;
+}
+.centrar{
+    text-align: center;
+}
+.right{
+   text-align: right; 
+}
+.left{
+    text-align: left;
+}
+.justify{
+    text-align: justify;
+}
+.sp{
+    background-color: lighten($color3,20%);
+    border-radius: 5px;
+    margin-top: 4vh;
+    padding: 15px;
+    box-shadow: $shadow;
+}
+.button{
+    width: auto;
+    padding: 5px;
+    text-decoration: none;
+    background-color: lighten($color4,20%);
+    color: beige;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+.button:hover{
+    background-color: $color4;
+}
+.cadeau{
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+footer {
+  background-color: lighten($color3,20%);
+  width: 100%;
+    .container{
+        margin-top: 5px;
+    }
+}
+

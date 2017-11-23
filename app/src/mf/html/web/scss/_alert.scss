@@ -1,0 +1,35 @@
+
+
+$alert-info: #138496;
+$alert-warning: #E0A800;
+$alert-danger: #C9302C;
+$alert-success: #449D44;
+
+.alert{
+    display: block;
+//    margin: 5px 0px 5px 0px;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.alert.alert-success{
+    border: 3px solid $alert-success;
+    color: $alert-success;
+}
+
+.alert.alert-info{
+    border: 3px solid $alert-info;
+    color: $alert-info;
+}
+
+.alert.alert-danger{
+    border: 3px solid $alert-danger;
+    color: $alert-danger;
+}
+
+.alert.alert-warning{
+    border: 3px solid $alert-warning;
+    color: $alert-warning;
+}

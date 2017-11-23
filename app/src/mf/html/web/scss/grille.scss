@@ -1,0 +1,49 @@
+
+@media(min-width:480px){
+    .container{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    div { 
+    box-sizing: border-box;
+    }
+}
+    [class^=col]{
+         width: 46.7692307692%;
+    margin-left: 2.1538461538%;
+    }
+}
+  
+
+@media(min-width:768px){
+.container{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    div { 
+    box-sizing: border-box;
+    }
+}
+
+$elements: 12;
+$lgCol : 6;
+$lgGut : (100 - ($elements * $lgCol)) / ($elements + 1);
+@for $i from 1 through $elements{
+    .col-#{$i}{
+        width: $i * $lgCol + ($i - 1) * $lgGut * 1%;
+        margin-left: $lgGut * 1%;
+    }
+}
+
+@for $i from 1 through $elements{
+    .offset-#{$i}{
+        $a : $i * $lgCol + ($i - 1) * $lgGut * 1%;
+        $b : $lgGut * 1%;
+        margin-left: $a+($b*2);  
+        }
+    }
+}
+
+
